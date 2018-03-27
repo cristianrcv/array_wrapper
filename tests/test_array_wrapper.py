@@ -15,7 +15,7 @@ import unittest
 
 class TestArrayWrapper(unittest.TestCase):
 
-    def test_basic_operations():
+    def test_basic_operations(self):
         from array_wrapper import ArrayWrapper
         size = 100
         a = ArrayWrapper(size)
@@ -52,7 +52,7 @@ class TestArrayWrapper(unittest.TestCase):
         print("New size is " + str(new_size))
         assert (size == new_size)
 
-    def test_memory_jumps():
+    def test_memory_jumps(self):
         from array_wrapper import ArrayWrapper
         size = 100
         a = ArrayWrapper(size)
@@ -72,7 +72,7 @@ class TestArrayWrapper(unittest.TestCase):
             assert (jump == double_size)
             i += 1
 
-    def test_special_operations():
+    def test_special_operations(self):
         from array_wrapper import ArrayWrapper
         size = 100
         a = ArrayWrapper(size)
