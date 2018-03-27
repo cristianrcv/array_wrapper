@@ -103,3 +103,6 @@ ENV/
 # IntelliJ files
 .idea/
 
+# Ignore auto-generated array wrapper C file
+src/array_wrapper.c
+
