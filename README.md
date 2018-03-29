@@ -1,4 +1,5 @@
 <!-- Main Repository language -->
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a16d97b1ea2466bba4950b7749b16a9)](https://app.codacy.com/app/cristianrcv/array_wrapper?utm_source=github.com&utm_medium=referral&utm_content=cristianrcv/array_wrapper&utm_campaign=badger)
 [![Language](https://img.shields.io/badge/language-python-brightgreen.svg)](https://img.shields.io/badge/language-python-brightgreen.svg)
 
 <!-- Repository License -->
