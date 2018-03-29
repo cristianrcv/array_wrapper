@@ -10,11 +10,11 @@ import gc
 import weakref
 
 
-def print_info(name, iden, hex, inthex):
+def print_info(name, iden, hexa, inthex):
     print("-------------------------------")
     print("NAME: " + str(name))
     print("ID:   " + str(iden))
-    print("HEX:  " + str(hex))
+    print("HEX:  " + str(hexa))
     print("INT:  " + str(inthex))
     print("-------------------------------")
 

@@ -27,14 +27,14 @@ class TestArrayWrapper(unittest.TestCase):
         value_index = a.get_value_at_index(test_index)
         print("Value at " + str(test_index) + " should be " + str(new_value))
         print("Value at " + str(test_index) + " is " + str(value_index))
-        assert (new_value == value_index)
+        self.assertEquals(new_value, value_index)
 
         # Check address getter
         addr = a.get_address_of(test_index)
         value_addr = a.get_value_at_address(addr)
         print("Value should be " + str(new_value))
         print("Value at " + str(addr) + " is " + str(value_addr))
-        assert (new_value == value_addr)
+        self.assertEquals(new_value, value_addr)
 
         # Check address setter
         new_value = 2.0
@@ -42,7 +42,7 @@ class TestArrayWrapper(unittest.TestCase):
         value_index = a.get_value_at_index(test_index)
         print("Value should be " + str(new_value))
         print("Value is " + str(value_index))
-        assert (new_value == value_index)
+        self.assertEquals(new_value, value_index)
 
         # Check resize
         size = 200
@@ -50,7 +50,7 @@ class TestArrayWrapper(unittest.TestCase):
         new_size = a.get_size()
         print("New size should be " + str(size))
         print("New size is " + str(new_size))
-        assert (size == new_size)
+        self.assertEquals(size, new_size)
 
     def test_memory_jumps(self):
         from array_wrapper import ArrayWrapper
@@ -64,12 +64,11 @@ class TestArrayWrapper(unittest.TestCase):
 
         # Compute jumps
         double_size = 8
-        jumps = []
         i = 1
         while i < len(a_addrs):
             jump = a_addrs[i] - a_addrs[i - 1]
             print("JUMP FROM " + str(i - 1) + " TO " + str(i) + " IS: " + str(jump))
-            assert (jump == double_size)
+            self.assertEquals(jump, double_size)
             i += 1
 
     def test_special_operations(self):
@@ -85,7 +84,7 @@ class TestArrayWrapper(unittest.TestCase):
         internal_size = len(a)
         print("Size should be " + str(size))
         print("Size is " + str(internal_size))
-        assert (size == internal_size)
+        self.assertEquals(size, internal_size)
 
         # Get
         test_index = 50
@@ -95,7 +94,7 @@ class TestArrayWrapper(unittest.TestCase):
         value_special = a[test_index]
         print("Value should be " + str(value_index))
         print("Value is " + str(value_special))
-        assert (value_index == value_special)
+        self.assertEquals(value_index, value_special)
 
         # Set
         test_value = 3.0
@@ -103,14 +102,14 @@ class TestArrayWrapper(unittest.TestCase):
         value_index = a.get_value_at_index(test_index)
         print("Value should be " + str(test_value))
         print("Value is " + str(value_index))
-        assert (test_value == value_index)
+        self.assertEquals(test_value, value_index)
 
         # Contains
         if test_value in a:
             print("Value " + str(test_value) + " is contained")
         else:
             print("Value " + str(test_value) + " is missing!!")
-            assert (False)
+            self.assertTrue(False)
 
         # Iterator
         a_elements = []
@@ -118,7 +117,7 @@ class TestArrayWrapper(unittest.TestCase):
             a_elements.append(elem)
         print("A should have " + str(size) + " elements")
         print("A has " + str(len(a_elements)) + " elements")
-        assert (size == len(a_elements))
+        self.assertEquals(size, len(a_elements))
 
 
 #
