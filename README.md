@@ -2,6 +2,7 @@
 [![Codacy grade](https://api.codacy.com/project/badge/Grade/d5bf54f5febd40c380d0514244a19b4a)](https://www.codacy.com/app/cristianrcv/array_wrapper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cristianrcv/array_wrapper&amp;utm_campaign=Badge_Grade)
 
 <!-- Main Repository language -->
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a16d97b1ea2466bba4950b7749b16a9)](https://app.codacy.com/app/cristianrcv/array_wrapper?utm_source=github.com&utm_medium=referral&utm_content=cristianrcv/array_wrapper&utm_campaign=badger)
 [![Language](https://img.shields.io/badge/language-python-brightgreen.svg)](https://img.shields.io/badge/language-python-brightgreen.svg)
 
 <!-- Repository License -->
